@@ -4,6 +4,7 @@ require_once '../vendor/autoload.php';
 
 use Illuminate\Support\Collection;
 
+// wget https://api.github.com/users/dydx/events
 $events = new Collection(json_decode(file_get_contents('events.json'), true));
 
 $scores = new Collection([
